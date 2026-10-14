@@ -23,13 +23,9 @@
 @code {
     private void OnButtonClick()
     {
-        System.Diagnostics.Debug.WriteLine("Button clicked");
+        Console.WriteLine("Button clicked");
     }
     private SfDiagramComponent? diagram;
-
-    // ── Diagram node/connector collections (populated automatically by DataSourceSettings) ──
-    private DiagramObjectCollection<Node> nodes = new();
-    private DiagramObjectCollection<Connector> connectors = new();
 
     // ── Flat list consumed by DataSourceSettings ──────────────────────────────
     private List<OrgNode> orgNodes = new();
